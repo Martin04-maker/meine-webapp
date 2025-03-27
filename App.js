@@ -1,9 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Importiere Routes statt Switch
 import Page2 from "./Page2"; // Importiere Page2
-import Schramerhof from "./Schramerhof"; // Importiere Schramerhof-Seite
-import Apfelbluete from "./Apfelblüte"; // Importiere Apfelblüte-Seite
-import Blau from "./Blau"; // Importiere die Blau-Seite
 
 function App() {
   return (
@@ -49,18 +46,6 @@ function App() {
           {/* Route für die zweite Seite */}
           <Route path="/page2" element={<Page2 />} />
 
-          {/* Route für Schramerhof */}
-          <Route path="/schramerhof" element={<Schramerhof />} />
-
-          {/* Route für Apfelblüte */}
-          <Route path="/apfelbluete" element={<Apfelbluete />} />
-
-          {/* Route für Blau */}
-          <Route path="/blau" element={<Blau />} />
-        </Routes>
-      </div>
-    </Router>
-  );
-}
 
 export default App;
+
